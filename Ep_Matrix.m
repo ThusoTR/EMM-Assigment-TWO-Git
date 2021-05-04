@@ -7,10 +7,11 @@
 %p = max p value%
 
 %OUTPUS%
-%p by n Rpn matrix_type%
+%Rp matrix_type%
 
 function Ep = Ep_Matrix(a, p)
-  Ep = (zeros(1, p));  %Rpn matrix variable%
+  %Ep matrix variable%
+  Ep = (zeros(1, p));  
   
   for p_range = 1:p
  
@@ -18,3 +19,4 @@ function Ep = Ep_Matrix(a, p)
     q_sin_input = pi/a;
     Ep(p_range) = evaluate_sub_matrix(a ,p_sin_input, q_sin_input);            
   endfor
+ endfunction

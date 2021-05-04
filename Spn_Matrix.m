@@ -1,6 +1,6 @@
 %Author: Tshishonga Thuso
 
-%This functioin computes and returns the Spn matrix_type
+%This functioin computes and returns the Spn matrix%
 
 %INPUTS%
 %a = guide 1 width value%
@@ -23,3 +23,4 @@ function Spn = Spn_Matrix(a, c, p, n)
       Spn(p_range, n_range) = evaluate_sub_matrix(c ,p_sin_input, q_sin_input);          
     endfor
   endfor
+endfunction
