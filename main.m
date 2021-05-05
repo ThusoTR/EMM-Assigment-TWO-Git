@@ -24,4 +24,12 @@ function main(a, c, n, p, q, f_GHZ)
   Uqn_Matrix = Uqn_Matrix(c, q, n, f_GHZ)
   
   Hq_Matrix = Hq_Matrix(a, q, n, f_GHZ)
+  
+  %matrix of Rpn, Spn, Tqn, and Uqn sub-matrices%
+  matrix_Rpn_Spn_Tqn_Uqn = [Rpn_Matrix, Spn_Matrix; Tqn_Matrix, Uqn_Matrix]
+  
+  %matrix of Ep and Hq sub-matrices%
+  Ep_and_Hq_matrix = [Ep_Matrix; Hq_Matrix]
+  
+  y = matrix_Rpn_Spn_Tqn_Uqn*Ep_and_Hq_matrix
 endfunction  

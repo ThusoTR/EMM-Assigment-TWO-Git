@@ -13,7 +13,7 @@
 
 function Hq = Hq_Matrix(a, q, n, f_GHZ)
   %Hq matrix variable%
-  Hq = (zeros(1, q));  
+  Hq = (zeros(q, 1));  
   
   Z_a_1 = Compute_Zn(f_GHZ, a, n);
   

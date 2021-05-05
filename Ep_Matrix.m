@@ -11,7 +11,7 @@
 
 function Ep = Ep_Matrix(a, p)
   %Ep matrix variable%
-  Ep = (zeros(1, p));  
+  Ep = (zeros(p, 1));  
   
   for p_range = 1:p
  
