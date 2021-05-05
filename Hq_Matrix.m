@@ -27,6 +27,10 @@ function Hq = Hq_Matrix(a, q, n, f_GHZ)
   %Multiply each Hq value with a corresponding intrinsic impedance value%
   
   for i = 1:n
-    Hq(i) = Hq(i)*(-1/Z_a_1(1));
+    if(isreal(Z_a_1(i)))
+      Hq(i) = Hq(i)*(-1/Z_a_1(1));
+    else
+      Hq(i) = 0;
+    endif
   endfor
  endfunction

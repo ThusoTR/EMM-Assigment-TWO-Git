@@ -30,7 +30,11 @@ function Tqn = Tqn_Matrix(a, c, q, n, f_GHZ)
   
   for i = 1:n
     for j = 1:n
+      if(isreal(Z_a_n(i)))
       Tqn(i, j) = Tqn(i, j)*(-1/Z_a_n(i));
+      else
+      Tqn(i, j) = 0;
+      endif
     endfor
   endfor
 endfunction

@@ -1,0 +1,34 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "guide_1_w",
+         "type": "float",
+         "value": 22.86
+      },
+      {
+         "name": "height",
+         "type": "float",
+         "value": 10.16
+      },
+      {
+         "name": "guide_1_length",
+         "type": "float",
+         "value": 50.0
+      },
+      {
+         "name": "guide_2_w",
+         "type": "float",
+         "value": 18.0
+      },
+      {
+         "name": "metal_height",
+         "type": "float",
+         "value": 0.035
+      }
+   ],
+   "outputVariables": []
+}

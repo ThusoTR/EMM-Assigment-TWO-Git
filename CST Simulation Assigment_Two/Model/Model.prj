@@ -1,0 +1,21 @@
+[Version]
+2
+[ProjectVersion]
+'# MWS Version: Version 2020.4 - Mar 20 2020 - ACIS 29.0.1 - Student Edition
+[Author]
+thu_tsh
+[Mesh Cells]
+2,413
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f
+[Results]
+Frequency Domain: S-Parameter
+[Modeler Unique ID]
+5:cst simulation assigment_two.cst?4c014537a01c4b2ee77f6f2bec0954f1?42693:numberofparameters=5:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::guide_1_length?guide_1_w?guide_2_w?height?metal_height
+[Comment]

@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "22.86",
+            "name": "guide_1_w",
+            "value": "22.86"
+        },
+        {
+            "expr": "10.16",
+            "name": "height",
+            "value": "10.16"
+        },
+        {
+            "expr": "50",
+            "name": "guide_1_length",
+            "value": "50"
+        },
+        {
+            "expr": "18",
+            "name": "guide_2_w",
+            "value": "18"
+        },
+        {
+            "expr": "0.035",
+            "name": "metal_height",
+            "value": "0.035"
+        }
+    ],
+    "version": 1
+}

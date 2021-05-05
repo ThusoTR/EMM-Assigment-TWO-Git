@@ -31,7 +31,11 @@ function Uqn = Uqn_Matrix(c, q, n, f_GHZ)
   
   for i = 1:n
     for j = 1:n
-      Uqn(i, j) = Uqn(i, j)*(-1/Z_c_n(i));
+      if(isreal(Z_c_n(i)))
+        Uqn(i, j) = Uqn(i, j)*(-1/Z_c_n(i));
+      else
+        Uqn(i, j) = 0;
+      endif
     endfor
   endfor
 endfunction
