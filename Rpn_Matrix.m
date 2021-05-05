@@ -3,9 +3,9 @@
 %This functioin computes and returns the Rpn matrix_type
 
 %INPUTS%
-%a = guide 1 width value%
-%p = max p value%
-%n = max n value%
+%a = Guide 1 width value%
+%p = Max p value%
+%n = Max n value%
 
 %OUTPUS%
 %p by n Rpn matrix_type%
@@ -19,7 +19,7 @@ function Rpn = Rpn_Matrix(a, p, n)
       
       q_sin_input = (n_range*pi)/a;
       
-       Rpn(p_range, n_range) = -evaluate_sub_matrix(a ,p_sin_input, q_sin_input);          
+      Rpn(p_range, n_range) = -evaluate_sub_matrix(a ,p_sin_input, q_sin_input);          
     endfor
     
   endfor
