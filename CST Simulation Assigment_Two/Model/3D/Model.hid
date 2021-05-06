@@ -240,7 +240,6 @@ Solid.Delete "component1:Discontinuity_Metal"
 32
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command

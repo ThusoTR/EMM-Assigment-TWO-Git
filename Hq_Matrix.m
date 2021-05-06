@@ -11,26 +11,26 @@
 %OUTPUS%
 %Hq matrix_type%
 
-function Hq = Hq_Matrix(a, q, n, f_GHZ)
+function Hq = Hq_Matrix(a, c, q, n, f_GHZ)
   %Hq matrix variable%
   Hq = (zeros(q, 1));  
   
-  Z_a_1 = Compute_Zn(f_GHZ, a, n);
+  Z_a_1 = Compute_Zn(f_GHZ, a, 1)
   
   for p_range = 1:q
  
     p_sin_input = (p_range*pi)/a;
     q_sin_input = pi/a;
-    Hq(p_range) = evaluate_sub_matrix(a ,p_sin_input, q_sin_input);            
+    Hq(p_range) = evaluate_sub_matrix(c, p_sin_input, q_sin_input);            
   endfor
   
   %Multiply each Hq value with a corresponding intrinsic impedance value%
   
   for i = 1:n
-    if(isreal(Z_a_1(i)))
+##    if(isreal(Z_a_1(i)))
       Hq(i) = Hq(i)*(-1/Z_a_1(1));
-    else
-      Hq(i) = 0;
-    endif
+##    else
+##      Hq(i) = 0;
+##    endif
   endfor
  endfunction

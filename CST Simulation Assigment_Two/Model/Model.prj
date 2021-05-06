@@ -5,7 +5,7 @@
 [Author]
 thu_tsh
 [Mesh Cells]
-2,413
+2,334
 [Mesh Type]
 Tetrahedral
 [Last Problem Type]
@@ -17,5 +17,5 @@ f
 [Results]
 Frequency Domain: S-Parameter
 [Modeler Unique ID]
-5:cst simulation assigment_two.cst?4c014537a01c4b2ee77f6f2bec0954f1?42693:numberofparameters=5:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::guide_1_length?guide_1_w?guide_2_w?height?metal_height
+5:cst simulation assigment_two.cst?6932c95334257dd384347e80f7a70a50?51681:numberofparameters=5:port=1>mode=1>zre=0>zim=0?port=1>mode=2>zre=0>zim=0?port=1>mode=3>zre=0>zim=0?port=1>mode=4>zre=0>zim=0?port=1>mode=5>zre=0>zim=0?port=2>mode=1>zre=0>zim=0?port=2>mode=2>zre=0>zim=0?port=2>mode=3>zre=0>zim=0?port=2>mode=4>zre=0>zim=0?port=2>mode=5>zre=0>zim=0:::guide_1_length?guide_1_w?guide_2_w?height?metal_height
 [Comment]

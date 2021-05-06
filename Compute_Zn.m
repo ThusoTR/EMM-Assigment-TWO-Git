@@ -12,7 +12,7 @@
 
 function Zn = Compute_Zn(frequency_GHZ, guide_width, n)
   %Wavenumber%
-  wave_number_k_0 = (2*pi*frequency_GHZ*10^9)*sqrt((4*pi*10^-7)*(8.854*10^-12));
+  wave_number_k_0 = (2*pi*frequency_GHZ*10^9)*sqrt((4*pi*10^-7)*(8.854*10^-12))
   
   %Propagation constant variable definition%
   prop_const_b_n = zeros(1, 1:n);

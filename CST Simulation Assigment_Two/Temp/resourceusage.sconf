@@ -1,15 +1,15 @@
-FeatureKeywords:string:modeler:model:anchorpoints, DELETERESULTS:M0P0, mesh::background::boolean, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh::attributes:rstepw, mesh:lib:blsurf, solver:hf:fd:task:1, monitor:resultfilemap:load, la:precond:pdss5, DenseInitDangerousDim, monitor:resultfilemap:save, la:iterative, la:parallel_excitation:block, solver:hf:fd:amr:outerloop:readerrorestimator, mesh:tet:adaptive:fsample:recalc, solver:hf:fd:samples:12, background:normal, boundary:electric:xmax, boundary:electric:xmin, boundary:electric:ymax, boundary:electric:ymin, boundary:electric:zmax, boundary:electric:zmin, lineqssolver:setting:acceleratedrestart, material:rho, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:3D:freq, monitor:e-field, monitor:h-field, monitor:power:1d, monitor:surface current density, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:waveguide port:active, units:Capacitance:F, units:Conductance:S, units:Current:A, units:Frequency:GHz, units:Inductance:H, units:Length:mm, units:Resistance:Ohm, units:Temperature:Celsius, units:Time:ns, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, modeler:model:anchorpoints:saving, acceleration:cpu:1, acceleration:mpi:0, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive, visualization:field_plot:default_engine, DELETERESULTS:M000, solver:hf:fd:samples:11, modeler:variables:rebuild, modeler:variables:fastrebuild, DELETERESULTS:PARAMETRIC, solver:hf:fd:samples:20, modeler:model:anchorpoints:loading, modeler:load:fastloading
+FeatureKeywords:string:modeler:model:anchorpoints, DELETERESULTS:M0P0, mesh::background::boolean, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh::attributes:rstepw, mesh:lib:blsurf, solver:hf:fd:task:1, monitor:resultfilemap:load, la:precond:pdss5, DenseInitDangerousDim, monitor:resultfilemap:save, la:iterative, la:parallel_excitation:block, solver:hf:fd:amr:outerloop:readerrorestimator, mesh:tet:adaptive:fsample:recalc, solver:hf:fd:samples:12, background:normal, boundary:electric:xmax, boundary:electric:xmin, boundary:electric:ymax, boundary:electric:ymin, boundary:electric:zmax, boundary:electric:zmin, lineqssolver:setting:acceleratedrestart, material:rho, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:3D:freq, monitor:e-field, monitor:h-field, monitor:power:1d, monitor:surface current density, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:waveguide port:active, units:Capacitance:F, units:Conductance:S, units:Current:A, units:Frequency:GHz, units:Inductance:H, units:Length:mm, units:Resistance:Ohm, units:Temperature:Celsius, units:Time:ns, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, modeler:model:anchorpoints:saving, acceleration:cpu:1, acceleration:mpi:0, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive, visualization:field_plot:default_engine, DELETERESULTS:M000, solver:hf:fd:samples:11, modeler:variables:rebuild, modeler:variables:fastrebuild, DELETERESULTS:PARAMETRIC, solver:hf:fd:samples:20, modeler:model:anchorpoints:loading, modeler:load:fastloading, solver:hf:fd:lowweightedmodes, solver:hf:fd:samples:21, solver:hf:fd:sweep:addcheck:b
 LastWorkflowState:string:tetmesh:success
-solver_hf_tet_fd/InitialFreePhysicalInMB:int:3969
-solver_hf_tet_fd/MaxResidentSizeInMB:int:110
-solver_hf_tet_fd/MaxResidentSizeMiB:int:154
-solver_hf_tet_fd/MinFreePhysicalInMB:int:3842
-solver_pp/InitialFreePhysicalInMB:int:3934
-solver_pp/MaxResidentSizeInMB:int:24
-solver_pp/MaxResidentSizeMiB:int:6
-solver_pp/MinFreePhysicalInMB:int:3913
-tetmesh/InitialFreePhysicalInMB:int:3847
+solver_hf_tet_fd/InitialFreePhysicalInMB:int:3945
+solver_hf_tet_fd/MaxResidentSizeInMB:int:192
+solver_hf_tet_fd/MaxResidentSizeMiB:int:167
+solver_hf_tet_fd/MinFreePhysicalInMB:int:3745
+solver_pp/InitialFreePhysicalInMB:int:3899
+solver_pp/MaxResidentSizeInMB:int:31
+solver_pp/MaxResidentSizeMiB:int:12
+solver_pp/MinFreePhysicalInMB:int:3888
+tetmesh/InitialFreePhysicalInMB:int:3839
 tetmesh/MaxResidentSizeInMB:int:33
-tetmesh/MaxResidentSizeMiB:int:66
-tetmesh/MinFreePhysicalInMB:int:3836
+tetmesh/MaxResidentSizeMiB:int:73
+tetmesh/MinFreePhysicalInMB:int:3773
 ---
