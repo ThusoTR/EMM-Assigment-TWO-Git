@@ -1,17 +1,15 @@
 @CACHEFILEVERSION 2
 @DOUBLE
+(guide_1_w-guide_2_w)/2#
+2.43
 -guide_1_length
 -50
 guide_1_length
 50
 guide_1_w
 22.86
-guide_1_w+x1
-25.29
 guide_1_w-x1
 20.43
-guide_2_w
-18
 guide_2_w+x1
 20.43
 height

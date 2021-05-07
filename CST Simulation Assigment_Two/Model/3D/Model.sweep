@@ -1,9 +1,24 @@
 {
     "parameter sweep": {
         "options": {
-            "restore parameter values after run": "false",
+            "restore parameter values after run": "true",
+            "simulation type": "Frequency",
             "skip existing combinations": "true",
             "start active solver": "true"
+        },
+        "sequences": {
+            "Sequence 1": [
+                {
+                    "from": "5",
+                    "step width": "1",
+                    "to": "22",
+                    "type": "linear",
+                    "varname": "guide_2_w"
+                },
+                {
+                    "index": 1
+                }
+            ]
         },
         "version": 1
     }

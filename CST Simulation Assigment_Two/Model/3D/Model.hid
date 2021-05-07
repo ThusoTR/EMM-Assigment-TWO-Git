@@ -228,9 +228,7 @@ Port.Delete "1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:Discontinuity_Metal_2"
-
 [end]content
 [start]recover_picks
 1

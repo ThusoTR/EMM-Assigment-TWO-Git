@@ -7,11 +7,13 @@
 %q = max q value%
 %n = max n value%
 %f_GHZ = frequency in GHZ%
+%a_upper = max integral limit%
+%a_lower = min integral limit%
 
 %OUTPUS%
 %q by n Uqn matrix_type%
 
-function Uqn = Uqn_Matrix(c, q, n, f_GHZ)
+function Uqn = Uqn_Matrix(c, q, n, f_GHZ, a_upper, a_lower, theta, alpha)
   %Uqn matrix definition%
   Uqn = zeros(n);
   %retrieve intrinsic impedance for each gudie 1 mode%
@@ -23,7 +25,7 @@ function Uqn = Uqn_Matrix(c, q, n, f_GHZ)
       
       q_sin_input = (n_range*pi)/c;
       
-      Uqn(p_range, n_range) = evaluate_sub_matrix(c ,p_sin_input, q_sin_input);          
+      Uqn(p_range, n_range) = evaluate_sub_matrix(a_upper, a_lower ,p_sin_input, q_sin_input, theta, alpha);          
     endfor
   endfor
   
