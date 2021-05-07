@@ -272,7 +272,7 @@ Solver.FrequencyRange "8", "12"
 [WAVEGUIDE: 1]
      .Label "" 
      .Folder "" 
-     .NumberOfModes "5" 
+     .NumberOfModes "1" 
      .AdjustPolarization "False" 
      .PolarizationAngle "0" 
      .ReferencePlaneDistance "0" 
@@ -296,7 +296,7 @@ Solver.FrequencyRange "8", "12"
 [WAVEGUIDE: 2]
      .Label "" 
      .Folder "" 
-     .NumberOfModes "5" 
+     .NumberOfModes "1" 
      .AdjustPolarization "False" 
      .PolarizationAngle "0" 
      .ReferencePlaneDistance "0" 
@@ -315,5 +315,5 @@ Solver.FrequencyRange "8", "12"
      .SingleEnded "False" 
      .WaveguideMonitor "False" 
      .ReferenceWCS "9", "5.08", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "0", "0", "50"(ENDTRANSFORM)
+(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "2.43", "0", "50"(ENDTRANSFORM)
 [ENDWAVEGUIDE]

@@ -15,7 +15,7 @@ function Uqn = Uqn_Matrix(c, q, n, f_GHZ)
   %Uqn matrix definition%
   Uqn = zeros(n);
   %retrieve intrinsic impedance for each gudie 1 mode%
-  Z_c_n = Compute_Zn(f_GHZ, c, n)
+  Z_c_n = Compute_Zn(f_GHZ, c, n);
   
   for p_range = 1:1:q
     for n_range = 1:1:n

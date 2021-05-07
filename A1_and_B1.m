@@ -5,7 +5,6 @@
 function A1_and_B1()
   %a (width of guide 1) and c (width of guide 2) variables% 
   a = 22.86*10^-3;
-  b = 10.16*10^-3;
   c = 18*10^-3;
   
   n = 1;
@@ -20,29 +19,35 @@ function A1_and_B1()
   B1 = zeros(41, 1);
   
   %Retrieve Rpn, Spn, Ep, Tqn, Uqn, and Hq sub-matrices%
-  Rpn_Matrix = Rpn_Matrix(a, p, n);
+  Rpn_Matrix_value = Rpn_Matrix(a, p, n);
     
-  Spn_Matrix = Spn_Matrix(a, c, p, n);
+  Spn_Matrix_value = Spn_Matrix(a, c, p, n);
     
-  Ep_Matrix = Ep_Matrix(a, p);
+  Ep_Matrix_value = Ep_Matrix(a, p);
   
-  for i = 1:1:41
-    f_range
-    Tqn_Matrix = Tqn_Matrix(a, c, q, n, 8);
+  for i = 1:1:41    
+    Tqn_Matrix_value = Tqn_Matrix(a, c, q, n, f_range(i));
+    Uqn_Matrix_value = Uqn_Matrix(c, q, n, f_range(i));
     
-##    Uqn_Matrix = Uqn_Matrix(c, q, n, f_range(i));
-##    
-##    Hq_Matrix = Hq_Matrix(a, c, q, n, f_range(i));
-##    
-##    %matrix of Rpn, Spn, Tqn, and Uqn sub-matrices%
-##    matrix_Rpn_Spn_Tqn_Uqn = [Rpn_Matrix, Spn_Matrix; Tqn_Matrix, Uqn_Matrix];
-##    
-##    %matrix of Ep and Hq sub-matrices%
-##    Ep_and_Hq_matrix = [Ep_Matrix; Hq_Matrix];
-##    
-##    A1_B1_result = inverse(matrix_Rpn_Spn_Tqn_Uqn)*Ep_and_Hq_matrix;
-##    
-##    A1(i) = A1_B1_result(1);
-##    B1(i) = A1_B1_result(2);
+    Hq_Matrix_value = Hq_Matrix(a, c, q, n, f_range(i));
+    
+    %matrix of Rpn, Spn, Tqn, and Uqn sub-matrices%
+    matrix_Rpn_Spn_Tqn_Uqn_values = [Rpn_Matrix_value, Spn_Matrix_value; Tqn_Matrix_value, Uqn_Matrix_value];
+    
+    %matrix of Ep and Hq sub-matrices%
+    Ep_and_Hq_matrix_values = [Ep_Matrix_value; Hq_Matrix_value];
+    
+    A1_B1_result_values = inverse(matrix_Rpn_Spn_Tqn_Uqn_values)*Ep_and_Hq_matrix_values;
+    
+    if(isreal(A1_B1_result_values(1)))
+      A1(i) = A1_B1_result_values(1);
+    else 
+      A1(i) = 1;
+    endif
+    
+    B1(i) = A1_B1_result_values(1);
   endfor
+  plot(f_range, 20*log10(A1));
+  A1
+  %plot(f_range, 20*log(B1));
 endfunction

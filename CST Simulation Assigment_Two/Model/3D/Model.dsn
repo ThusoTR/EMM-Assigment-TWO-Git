@@ -2,7 +2,7 @@
 
 Number of ports: 2
 Portnames: 1 2
-Modenumbers: 5 5
+Modenumbers: 1 1
 Porttypes: 3 3
 Portlabels: "" ""
 StaticSources:
@@ -36,38 +36,6 @@ Fscale: 1.000000e+09
 *** newmode
 SetType: 100
 Portname: 2
-Modenumber: 5
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 2
-Modenumber: 4
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 2
-Modenumber: 3
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 2
-Modenumber: 2
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 2
 Modenumber: 1
 Modetype: 4
 PortModeConsState: 0
@@ -77,38 +45,6 @@ PortModeConsState: 0
 
 
 *** newset
-
-*** newmode
-SetType: 100
-Portname: 1
-Modenumber: 5
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 1
-Modenumber: 4
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 1
-Modenumber: 3
-Modetype: 4
-PortModeConsState: 0
-*** endmode
-
-*** newmode
-SetType: 100
-Portname: 1
-Modenumber: 2
-Modetype: 4
-PortModeConsState: 0
-*** endmode
 
 *** newmode
 SetType: 100

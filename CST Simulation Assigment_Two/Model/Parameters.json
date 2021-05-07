@@ -24,6 +24,11 @@
             "expr": "0.035",
             "name": "metal_height",
             "value": "0.035"
+        },
+        {
+            "expr": "(guide_1_w-guide_2_w)/2",
+            "name": "x1",
+            "value": "2.43"
         }
     ],
     "version": 1
