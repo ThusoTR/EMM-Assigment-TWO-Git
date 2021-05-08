@@ -7,9 +7,9 @@ function A1_and_B1()
   a = 22.86*10^-3;
   c = 18*10^-3;
   
-  n = 1;
-  p = 1;
-  q = 1;
+  n = 5;
+  p = 5;
+  q = 5;
   
   %Frequency range (GHz)%
   f_range = 8:0.1:12;
@@ -49,15 +49,20 @@ function A1_and_B1()
     
     A1_B1_result_values = inverse(matrix_Rpn_Spn_Tqn_Uqn_values)*Ep_and_Hq_matrix_values;
     
-    if(isreal(A1_B1_result_values(1)))
+    Zcm = Compute_Zn(f_range(i), c, 1);
+    if(isreal(Zcm))
       A1(i) = A1_B1_result_values(1);
     else 
       A1(i) = 1;
     endif
     
-    B1(i) = A1_B1_result_values(2);
+    if (isreal(Zcm))
+      B1(i) = A1_B1_result_values(2)
+    else
+      B1(i) = abs(A1_B1_result_values(2));
+    endif
   endfor
-  plot(f_range, 20*log10(A1));
-  hold
-  plot(f_range, -20*log10(B1));
+  plot(f_range, 20*log10(abs(A1)));
+##  hold
+##  plot(f_range, -20*log10(B1));
 endfunction

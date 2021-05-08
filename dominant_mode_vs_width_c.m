@@ -52,7 +52,7 @@ function dominant_mode_vs_width_c()
     
     B1(i) = A1_B1_result_values(2);
   endfor
-  plot(c_range, 20*log10(A1));
+  plot(c_range, 20*log10(abs(A1)));
 
-##  plot(c_range, -20*log10(B1));
+  plot(c_range, -20*log10(abs(B1)));
 endfunction
