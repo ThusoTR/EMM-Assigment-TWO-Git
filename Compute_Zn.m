@@ -28,5 +28,5 @@ function Zn = Compute_Zn(frequency_GHZ, guide_width, n)
   %Impedance at each n waveguide mode%
   for j = 1:n
     Zn(j) = (wave_number_k_0*377)/prop_const_b_n(j);
-  endfor 
+  endfor
 endfunction

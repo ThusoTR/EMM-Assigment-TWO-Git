@@ -5,9 +5,9 @@
 [Author]
 thu_tsh
 [Mesh Cells]
-7,920
+
 [Mesh Type]
-Hexahedral
+Tetrahedral
 [Last Problem Type]
 High Frequency
 [Last Solver Type]
@@ -15,7 +15,7 @@ HF Frequency Domain
 [Last Solver Type Abb]
 f
 [Results]
-Time Domain: S-Parameter
+Unknown
 [Modeler Unique ID]
-5:cst simulation assigment_two.cst?dffd738d0a18e774cada14a45ec6e365?68408:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::guide_1_length?guide_1_w?guide_2_w?height?metal_height?x1
+5:cst simulation assigment_two.cst?4668c758e5cc29cfd3c462670a3ade5b?93382:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::guide_1_length?guide_1_w?guide_2_w?height?metal_height?x1
 [Comment]
